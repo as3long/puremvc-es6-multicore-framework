@@ -1,0 +1,22 @@
+{
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "worker": true,
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "curly": [2, "all"],
+    "no-console": "off",
+    "no-unused-vars": "off"
+  }
+}
