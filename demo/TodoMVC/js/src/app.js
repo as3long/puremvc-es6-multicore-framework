@@ -1,8 +1,8 @@
-var puremvc = window.puremvc;
-var AppConstants = require('./AppConstants');
-var StartupCommand = require('./controller/command/StartupCommand');
+let puremvc = window.puremvc;
+import AppConstants from './AppConstants';
+import StartupCommand from './controller/command/StartupCommand';
 
-var AppFacade = function () {
+let AppFacade = function () {
   this.facade = puremvc.Facade.getInstance(AppConstants.CORE_NAME);
   this.facade.registerCommand(AppConstants.STARTUP, StartupCommand);
   this.facade.sendNotification(AppConstants.STARTUP);

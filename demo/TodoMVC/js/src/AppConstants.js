@@ -1,4 +1,4 @@
-var AppConstants = {
+const AppConstants = {
   // The multiton key for this app's single core
   CORE_NAME: 'TodoMVC',
 
