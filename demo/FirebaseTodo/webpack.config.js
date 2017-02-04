@@ -3,7 +3,8 @@ var config = {
   entry: './src/js/app.js',
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/demo/FirebaseTodo/dist/'
   },
   resolve: { // resolve 指定可以被 import 的文件后缀
     extensions: ['', '.js', '.jsx']

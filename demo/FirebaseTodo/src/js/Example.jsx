@@ -1,19 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Appbar from 'muicss/src/react/appbar';
-import Button from 'muicss/src/react/button';
-import Container from 'muicss/src/react/container';
+import Appbar from 'muicss/lib/react/appbar';
+import Button from 'muicss/lib/react/button';
+import Container from 'muicss/lib/react/container';
 
 class Example extends React.Component {
   render() {
     return (
       <div>
-        <Appbar></Appbar>
         <Container>
-          <Button color="primary">button</Button>
+          <Button color="primary" onClick={this.clickHandler}>btn1</Button>
+          <Button color="primary" onClick={this.clickHandler}>btn2</Button>
         </Container>
       </div>
     );
+  }
+
+  clickHandler = () => {
+    console.log('点击按钮');
   }
 }
 

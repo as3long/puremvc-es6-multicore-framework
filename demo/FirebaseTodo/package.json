@@ -1,0 +1,7 @@
+{
+  "name": "FirebaseTodo",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --content-base ../../",
+    "build": "webpack"
+  }
+}
